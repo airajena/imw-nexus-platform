@@ -9,10 +9,10 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'Hotel Booking', href: '/hotel-booking' },
-    { name: 'Venue Booking', href: '/venue-booking' },
-    { name: 'Transportation', href: '/transportation' },
-    { name: 'My Dashboard', href: '/dashboard' },
+    { name: 'About', href: '#about' },
+    { name: 'Program', href: '#program' },
+    { name: 'Speakers', href: '#speakers' },
+    { name: 'Exhibition', href: '#exhibition' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -42,8 +42,8 @@ const Header = () => {
                 <span className="text-white font-bold text-lg">IMW</span>
               </div>
               <div>
-                <h1 className="text-xl sm:text-2xl font-bold text-gray-900">India Mobile World</h1>
-                <p className="text-sm text-gray-600 hidden sm:block">International Manufacturing Week 2025</p>
+                <h1 className="text-xl sm:text-2xl font-bold text-gray-900">India Maritime Week</h1>
+                <p className="text-sm text-gray-600 hidden sm:block">International Maritime Conference 2025</p>
               </div>
             </Link>
           </div>

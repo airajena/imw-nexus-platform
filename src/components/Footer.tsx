@@ -12,6 +12,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const quickLinks = [
@@ -50,6 +51,13 @@ const Footer = () => {
     "Privacy Policy"
   ];
 
+  const bookingLinks = [
+    { name: 'Hotel Booking', href: '/hotel-booking' },
+    { name: 'Venue Booking', href: '/venue-booking' },
+    { name: 'Transportation', href: '/transportation' },
+    { name: 'My Dashboard', href: '/dashboard' }
+  ];
+
   return (
     <footer className="bg-gray-900 text-white">
       {/* Newsletter Section */}
@@ -59,7 +67,7 @@ const Footer = () => {
             Stay Updated with IMW 2025
           </h3>
           <p className="text-orange-100 mb-8 max-w-2xl mx-auto">
-            Get the latest news, updates, and exclusive offers delivered directly to your inbox.
+            Get the latest news, updates, and exclusive offers for India Maritime Week delivered directly to your inbox.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input
@@ -86,13 +94,13 @@ const Footer = () => {
                   <span className="text-white font-bold">IMW</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">India Mobile World</h3>
+                  <h3 className="text-xl font-bold">India Maritime Week</h3>
                   <p className="text-gray-400 text-sm">IMW 2025</p>
                 </div>
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
-                India's premier international manufacturing week, bringing together global industry leaders, 
-                innovators, and decision-makers to shape the future of manufacturing.
+                India's premier international maritime conference, bringing together global industry leaders, 
+                innovators, and decision-makers to shape the future of maritime industry.
               </p>
               
               {/* Government Compliance */}
@@ -135,6 +143,23 @@ const Footer = () => {
                     <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
                       {link}
                     </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Booking Services */}
+            <div>
+              <h4 className="text-lg font-semibold mb-6">Booking Services</h4>
+              <ul className="space-y-3">
+                {bookingLinks.map((link) => (
+                  <li key={link.name}>
+                    <Link 
+                      to={link.href} 
+                      className="text-gray-400 hover:text-white transition-colors text-sm font-bold"
+                    >
+                      {link.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -209,7 +234,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-gray-400">
-              © 2024 India Mobile World (IMW) 2025. All rights reserved. | An Initiative of Government of India
+              © 2024 India Maritime Week (IMW) 2025. All rights reserved. | An Initiative of Government of India
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
