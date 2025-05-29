@@ -2,17 +2,17 @@
 import React, { useState } from 'react';
 import { Menu, X, Search, Globe, User, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About IMW', href: '#about' },
-    { name: 'Exhibitions', href: '#exhibitions' },
-    { name: 'Conference', href: '#conference' },
-    { name: 'Registration', href: '#registration' },
-    { name: 'Archives', href: '#archives' },
+    { name: 'Home', href: '/' },
+    { name: 'Hotel Booking', href: '/hotel-booking' },
+    { name: 'Venue Booking', href: '/venue-booking' },
+    { name: 'Transportation', href: '/transportation' },
+    { name: 'My Dashboard', href: '/dashboard' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -37,7 +37,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo Section */}
           <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center space-x-3">
               <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-lg">IMW</span>
               </div>
@@ -45,20 +45,20 @@ const Header = () => {
                 <h1 className="text-xl sm:text-2xl font-bold text-gray-900">India Mobile World</h1>
                 <p className="text-sm text-gray-600 hidden sm:block">International Manufacturing Week 2025</p>
               </div>
-            </div>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-gray-700 hover:text-orange-600 font-medium transition-colors duration-200 relative group"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -89,14 +89,14 @@ const Header = () => {
         <div className="lg:hidden bg-white border-t">
           <div className="px-4 py-6 space-y-4">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="block py-2 text-gray-700 hover:text-orange-600 font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
             <div className="pt-4 space-y-2">
               <Button variant="outline" className="w-full justify-center">
