@@ -22,8 +22,8 @@ const Header = () => {
       <div className="bg-gradient-to-r from-orange-600 to-green-600 text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
-            <span className="flex items-center"><Calendar className="w-4 h-4 mr-1" />February 10-12, 2025</span>
-            <span className="hidden md:block">New Delhi, India</span>
+            <span className="flex items-center"><Calendar className="w-4 h-4 mr-1" />October 27-31, 2025</span>
+            <span className="hidden md:block">Mumbai, India</span>
           </div>
           <div className="flex items-center space-x-4">
             <Globe className="w-4 h-4" />

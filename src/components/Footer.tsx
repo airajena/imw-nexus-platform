@@ -194,7 +194,7 @@ const Footer = () => {
             </div>
 
             {/* Support */}
-            <div>
+            {/* <div>
               <h4 className="text-lg font-semibold mb-6">Support</h4>
               <ul className="space-y-3 mb-6">
                 {supportLinks.map((link) => (
@@ -204,10 +204,10 @@ const Footer = () => {
                     </a>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
 
               {/* Social Media */}
-              <div>
+              {/* <div>
                 <h5 className="font-semibold mb-3">Follow Us</h5>
                 <div className="flex space-x-3">
                   <a href="#" className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors">
@@ -223,8 +223,8 @@ const Footer = () => {
                     <Youtube className="w-4 h-4" />
                   </a>
                 </div>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
         </div>
       </div>
