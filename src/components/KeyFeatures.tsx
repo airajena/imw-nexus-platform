@@ -1,64 +1,63 @@
-
 import React from 'react';
 import { 
-  Globe, 
+  Anchor, 
   Users, 
   Calendar, 
   Award, 
-  Building, 
+  Ship, 
   Lightbulb,
   Shield,
-  Zap
+  Waves
 } from 'lucide-react';
 
 const KeyFeatures = () => {
   const features = [
     {
-      icon: Globe,
-      title: "Global Platform",
-      description: "Connect with manufacturers and suppliers from 50+ countries",
+      icon: Anchor,
+      title: "Maritime Hub",
+      description: "Connect with shipping companies and port authorities from 40+ countries",
       color: "bg-blue-500"
     },
     {
       icon: Users,
-      title: "Networking Hub",
-      description: "Meet 50,000+ industry professionals and decision makers",
-      color: "bg-green-500"
+      title: "Industry Network",
+      description: "Meet 25,000+ maritime professionals and decision makers",
+      color: "bg-cyan-500"
     },
     {
       icon: Award,
-      title: "Innovation Showcase",
-      description: "Discover cutting-edge technologies and industry innovations",
+      title: "Maritime Innovation",
+      description: "Discover latest maritime technologies and sustainable shipping solutions",
       color: "bg-orange-500"
     },
     {
-      icon: Building,
-      title: "Exhibition Space",
-      description: "Explore 1000+ exhibitors across multiple industry sectors",
+      icon: Ship,
+      title: "Exhibition Fleet",
+      description: "Explore 500+ exhibitors across shipping, ports, and logistics sectors",
       color: "bg-purple-500"
     },
     {
       icon: Calendar,
-      title: "Conference Program",
-      description: "Attend 100+ sessions with industry thought leaders",
+      title: "Maritime Summit",
+      description: "Attend 75+ sessions with shipping industry thought leaders",
       color: "bg-red-500"
     },
     {
       icon: Lightbulb,
-      title: "Knowledge Sharing",
-      description: "Access research papers, case studies, and industry reports",
+      title: "Blue Economy Insights",
+      description: "Access maritime research, port development studies, and shipping reports",
       color: "bg-yellow-500"
     },
     {
       icon: Shield,
-      title: "Government Support",
-      description: "Backed by Government of India and MEITY guidelines",
+      title: "Government Backing",
+      description: "Supported by Ministry of Ports, Shipping & Waterways, Govt of India",
       color: "bg-indigo-500"
     },
     {
-      icon: Zap,
-      title: "Digital Experience",
-      description: "Virtual exhibitions, live streaming, and digital tools",
+      icon: Waves,
+      title: "Digital Maritime",
+      description: "Virtual port tours, live shipping demos, and digital maritime tools",
       color: "bg-teal-500"
     }
   ];
@@ -69,11 +68,11 @@ const KeyFeatures = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Why Choose IMW 2025?
+            Why Choose India Maritime Week 2025?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            India Mobile World brings together the global manufacturing ecosystem under one roof, 
-            creating unprecedented opportunities for growth, innovation, and collaboration.
+            India Maritime Week brings together the global maritime ecosystem under one roof, 
+            creating unprecedented opportunities for growth, innovation, and collaboration in India's blue economy.
           </p>
         </div>
 
@@ -102,25 +101,25 @@ const KeyFeatures = () => {
           <div className="grid md:grid-cols-4 gap-8 text-center text-white">
             <div>
               <div className="text-4xl lg:text-5xl font-bold text-orange-400 mb-2">
-                1000+
+                500+
               </div>
               <div className="text-lg text-blue-100">Exhibitors</div>
             </div>
             <div>
-              <div className="text-4xl lg:text-5xl font-bold text-green-400 mb-2">
-                50,000+
+              <div className="text-4xl lg:text-5xl font-bold text-cyan-400 mb-2">
+                25,000+
               </div>
               <div className="text-lg text-blue-100">Visitors</div>
             </div>
             <div>
               <div className="text-4xl lg:text-5xl font-bold text-blue-400 mb-2">
-                50+
+                40+
               </div>
               <div className="text-lg text-blue-100">Countries</div>
             </div>
             <div>
               <div className="text-4xl lg:text-5xl font-bold text-purple-400 mb-2">
-                100+
+                75+
               </div>
               <div className="text-lg text-blue-100">Sessions</div>
             </div>
