@@ -26,8 +26,8 @@ const Header = () => {
     { name: 'About', href: '/about' },
     { name: 'Program', href: '/program' },
     { name: 'Speakers', href: '/speakers' },
-    { name: 'Exhibition', href: '#exhibition' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Exhibition', href: '/exhibition' },
+    { name: 'Contact', href: '/contact' }
   ];
 
   const handleLoginClick = () => {

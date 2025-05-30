@@ -13,6 +13,8 @@ import BookingConfirmation from "./pages/BookingConfirmation";
 import About from "./pages/About";
 import Program from "./pages/Program";
 import Speakers from "./pages/Speakers";
+import Exhibition from "./pages/Exhibition";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/program" element={<Program />} />
           <Route path="/speakers" element={<Speakers />} />
+          <Route path="/exhibition" element={<Exhibition />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/hotel-booking" element={<HotelBooking />} />
           <Route path="/venue-booking" element={<EventVenueBooking />} />
           <Route path="/transportation" element={<TransportationBooking />} />
