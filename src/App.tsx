@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -11,6 +10,7 @@ import EventVenueBooking from "./pages/EventVenueBooking";
 import TransportationBooking from "./pages/TransportationBooking";
 import UserDashboard from "./pages/UserDashboard";
 import BookingConfirmation from "./pages/BookingConfirmation";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +22,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
           <Route path="/hotel-booking" element={<HotelBooking />} />
           <Route path="/venue-booking" element={<EventVenueBooking />} />
           <Route path="/transportation" element={<TransportationBooking />} />
