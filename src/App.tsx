@@ -12,6 +12,7 @@ import UserDashboard from "./pages/UserDashboard";
 import BookingConfirmation from "./pages/BookingConfirmation";
 import About from "./pages/About";
 import Program from "./pages/Program";
+import Speakers from "./pages/Speakers";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/program" element={<Program />} />
+          <Route path="/speakers" element={<Speakers />} />
           <Route path="/hotel-booking" element={<HotelBooking />} />
           <Route path="/venue-booking" element={<EventVenueBooking />} />
           <Route path="/transportation" element={<TransportationBooking />} />
